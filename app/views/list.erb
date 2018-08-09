@@ -1,0 +1,10 @@
+<ul>
+
+  <% @objects.each do |object| %>
+    <li>
+      <a href='/<%= object.class.to_s.downcase %>s/<%= object.slug %>'>
+      <%= object.name %></a>
+    </li>
+  <% end %>
+
+</ul>
